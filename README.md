@@ -1,7 +1,22 @@
 # user-profile-management-api
-This is a REST API for User Profiles of a Soft Drink Company and it is Written in Spring Boot
 
 `user-profile-management-api` is a backend application written in spring boot for the purpose of managing users of a soft drink company.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for testing purposes.
+
+### Prerequisites
+
+- you need to have [Java Development Kit](https://www.oracle.com/java/technologies/downloads/) installed on your machine (Starting from jdk 8 or later)
+- You need to have an IDE installed on your machine too, I recommend [IntellJ](https://www.jetbrains.com/idea/)
+- And optionally you can have [Maven CLI](https://maven.apache.org/ref/3.6.1/maven-embedder/cli.html) installed on your machine as it help when building or doing some other maven actions in spring boot applications
+
+## Built with
+* [Spring Boot](https://spring.io)
+
+### What this project can do
+
 This application is able to do the following: 
 - Allow user registration
 - Users can login and get a Token
@@ -12,3 +27,5 @@ This application is able to do the following:
 - It performs CRUD operations perfectly
 - It allow to search a user by either user Id or username;
 - It allow users to add profile images on their account
+
+
