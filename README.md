@@ -12,8 +12,8 @@ These instructions will get you a copy of the project up and running on your loc
 - You need to have an IDE installed on your machine too, I recommend [IntellJ](https://www.jetbrains.com/idea/)
 - And optionally you can have [Maven CLI](https://maven.apache.org/ref/3.6.1/maven-embedder/cli.html) installed on your machine as it help when building or doing some other maven actions in spring boot applications
 
-## Built with
-* [Spring Boot](https://spring.io)
+### Built with
+*This project is built with [Spring Boot](https://spring.io)
 
 ### What this project can do
 
