@@ -6,6 +6,9 @@ This application is able to do the following:
 - Allow user registration
 - Users can login and get a Token
 - It is able to hash user's password for security
-- It is able to let users reset their password once they are forgotten
+- It is able to let users reset their password once they are forgotten by sending them an email with the help of [Infobip](https://www.infobip.com)
 - It validate users data before they register their account
-- It validate users data before they register their account
+- It allows user profiles to be deleted once required
+- It performs CRUD operations perfectly
+- It allow to search a user by either user Id or username;
+- It allow users to add profile images on their account
