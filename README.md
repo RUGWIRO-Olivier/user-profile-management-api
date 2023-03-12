@@ -6,7 +6,7 @@
 
 These instructions will get you a copy of the project up and running on your local machine for testing purposes.
 
-## Prerequisites
+### Prerequisites
 
 - you need to have [Java Development Kit](https://www.oracle.com/java/technologies/downloads/) installed on your machine (Starting from jdk 8 or later)
 - You need to have an IDE installed on your machine too, I recommend [IntellJ IDEA](https://www.jetbrains.com/idea/)
