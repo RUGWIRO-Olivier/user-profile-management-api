@@ -40,6 +40,6 @@ This application is able to do the following:
 ```bash
 
 1. dotenv
-2. docker
+2. Dockerfile
 3. docker-compose
 
