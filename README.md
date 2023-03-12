@@ -6,7 +6,7 @@
 
 These instructions will get you a copy of the project up and running on your local machine for testing purposes.
 
-### Prerequisites
+## Prerequisites
 
 - you need to have [Java Development Kit](https://www.oracle.com/java/technologies/downloads/) installed on your machine (Starting from jdk 8 or later)
 - You need to have an IDE installed on your machine too, I recommend [IntellJ IDEA](https://www.jetbrains.com/idea/)
@@ -16,10 +16,12 @@ These instructions will get you a copy of the project up and running on your loc
 - So to test the endpoints with Swagger use this link http://localhost:8080/swagger-ui/index.html as the default server port for this applicaion is ``8080`` so once you decide to change the server port number remember to change it in the above swagger link too
 
 
-### Technologies used
-This project is built with [Spring Boot](https://spring.io)
+## Built with
+This project is built with:
+- [Spring Boot](https://spring.io)
+- [Maven](https://maven.apache.org/)
 
-### What this project can do
+## What this project can do
 
 This application is able to do the following: 
 - Allow user registration
