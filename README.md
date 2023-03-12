@@ -42,7 +42,7 @@ This application is able to do the following:
 1. dotenv
 2. Dockerfile
 3. docker-compose
-
+```
 ## Author (s)
 ### 1. RUGWIRO Olivier
 * Github: [@RUGWIRO-Olivier](https://github.com/RUGWIRO-Olivier)
