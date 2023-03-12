@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 - you need to have [Java Development Kit](https://www.oracle.com/java/technologies/downloads/) installed on your machine (Starting from jdk 8 or later)
-- You need to have an IDE installed on your machine too, I recommend [IntellJ](https://www.jetbrains.com/idea/)
+- You need to have an IDE installed on your machine too, I recommend [IntellJ IDEA](https://www.jetbrains.com/idea/)
 - And optionally you can have [Maven CLI](https://maven.apache.org/ref/3.6.1/maven-embedder/cli.html) installed on your machine as it help when building or doing some other maven actions in spring boot applications
 - For you to be able to test the endpoints your are required to have Postman on your machine or alternatively I have configured Springdoc Swagger in this application which allow you to test the application easily and access the documentation
 - To test the endpoints with Swagger use this link http://localhost:8080/swagger-ui/index.html
