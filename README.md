@@ -43,3 +43,9 @@ This application is able to do the following:
 2. Dockerfile
 3. docker-compose
 
+## Author (s)
+### 1. RUGWIRO Olivier
+* Github: [@RUGWIRO-Olivier](https://github.com/RUGWIRO-Olivier)
+
+## Show your support 
+Give a ⭐️ if you like this project!
