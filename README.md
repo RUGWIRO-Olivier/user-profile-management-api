@@ -30,5 +30,6 @@ This application is able to do the following:
 - It performs CRUD operations perfectly
 - It allow to search a user by either user Id or username;
 - It allow users to add profile images on their account
+- This project uses JWT to generate token for the users
 
 
