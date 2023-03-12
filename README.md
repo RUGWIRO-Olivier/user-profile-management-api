@@ -1,5 +1,6 @@
 # user-profile-management-api
 This is a REST API for User Profiles of a Soft Drink Company and it is Written in Spring Boot
+
 `user-profile-management-api` is a backend application written in spring boot for the purpose of managing users of a soft drink company.
 This application is able to do the following: 
 - Allow user registration
