@@ -48,4 +48,4 @@ This application is able to do the following:
 * Github: [@RUGWIRO-Olivier](https://github.com/RUGWIRO-Olivier)
 
 ## Show your support 
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you appreciated my work!
