@@ -35,4 +35,11 @@ This application is able to do the following:
 - It allow users to add profile images on their account
 - This project uses JWT to generate token for the users
 
+## Gems used
+
+```bash
+
+1. dotenv
+2. docker
+3. docker-compose
 
