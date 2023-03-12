@@ -15,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 - To test the endpoints with Swagger use this link http://localhost:8080/swagger-ui/index.html
 
 
-### Built with
+### Technologies used
 This project is built with [Spring Boot](https://spring.io)
 
 ### What this project can do
