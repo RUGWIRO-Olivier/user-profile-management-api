@@ -24,6 +24,8 @@ public interface UserService {
 
     void deleteUser(String username) throws IOException;
 
+    void changePassword(String username, String oldPassword, String newPassword) throws MessagingException, UserNotFoundException, IncorrectPasswordException;
+
     void resetPassword(String email) throws MessagingException, EmailNotFoundException, IOException;
 
     User updateProfileImage(String username, MultipartFile profileImage) throws UserNotFoundException, UsernameExistException, EmailExistException, IOException, NotAnImageFileException;

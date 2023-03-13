@@ -39,6 +39,7 @@ import static org.springframework.http.MediaType.IMAGE_JPEG_VALUE;
 public class UserController extends ExceptionHandling {
     public static final String EMAIL_SENT = "An email with a new password was sent to: ";
     public static final String USER_DELETED_SUCCESSFULLY = "User deleted successfully";
+    public static final String PASSWORD_CHANGED_SUCCESSFULLY = "Password Changed successfully";
     private AuthenticationManager authenticationManager;
     private UserService userService;
     private JWTTokenProvider jwtTokenProvider;
@@ -63,8 +64,6 @@ public class UserController extends ExceptionHandling {
     @Operation(summary = "Register an account")
     @PostMapping("/register")
     public ResponseEntity<SignupResponse> register(@RequestBody @Valid User user) throws UserNotFoundException, UsernameExistException, EmailExistException, MessagingException {
-//        User newUser = userService.register(user.getFirstName(), user.getLastName(), user.getUsername(),user.getPassword(), user.getEmail(), user.getPhone(), user.getGender());
-
         SignupResponse response = SignupResponse.builder()
                 .user(userService.register(user.getFirstName(), user.getLastName(), user.getUsername(),user.getPassword(), user.getEmail(), user.getPhone(), user.getGender()))
                 .message("Sign Up Complete!")
@@ -73,7 +72,6 @@ public class UserController extends ExceptionHandling {
 
         return new ResponseEntity<>(response, HttpStatus.CREATED);
 
-//        return new ResponseEntity<>(newUser, OK);
     }
 
 
@@ -114,6 +112,14 @@ public class UserController extends ExceptionHandling {
         return new ResponseEntity<>(users, OK);
     }
 
+    @Operation(summary = "Change Password")
+    @PostMapping("/change-password")
+    public ResponseEntity<HttpResponse> changePassword( @RequestParam("currentUsername") String currentUsername,
+                                                       @RequestParam("oldPassword") String oldPassword,
+                                                        @RequestParam("newPassword") String  newPassword) throws MessagingException, UserNotFoundException, IncorrectPasswordException {
+        userService.changePassword(currentUsername, oldPassword, newPassword);
+        return response(OK, PASSWORD_CHANGED_SUCCESSFULLY);
+    }
 
     @Operation(summary = "Reset account Password by Using Email")
     @GetMapping("/reset-password/{email}")

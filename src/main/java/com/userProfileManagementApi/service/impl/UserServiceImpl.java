@@ -26,6 +26,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.mail.MessagingException;
 import javax.transaction.Transactional;
+import javax.validation.Valid;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -120,6 +121,28 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         userRepository.save(currentUser);
         saveProfileImage(currentUser, profileImage);
         return currentUser;
+    }
+
+    @Override
+    public void changePassword(String currentUsername, String oldPassword, String newPassword) throws MessagingException, UserNotFoundException, IncorrectPasswordException {
+        User user = userRepository.findUserByUsername(currentUsername);
+
+        if (user == null) {
+            throw new UserNotFoundException(NO_USER_FOUND_BY_USERNAME + currentUsername);
+        }
+        if(user!=null){
+            BCryptPasswordEncoder bc = new BCryptPasswordEncoder();
+            boolean passChecker = bc.matches(oldPassword, user.getPassword());
+            if(passChecker==false){
+                throw new IncorrectPasswordException(INCORRECT_PASSWORD);
+
+            }
+        }
+
+        String password = newPassword;
+        user.setPassword(encodePassword(password));
+        userRepository.save(user);
+        LOGGER.info("New user password: " + password);
     }
 
     @Override
